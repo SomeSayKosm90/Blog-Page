@@ -1,0 +1,133 @@
+*{
+    font-family: Source Sans Pro, sans-serif ;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size:1rem;
+}
+
+/* nav-bar */
+
+.nav-bar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.logo-icon{
+    height: 25px;
+    width: 25px;
+    margin-right: .2em;
+
+}
+
+.nav-header{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem ;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home{
+    margin-right: 1em;
+}
+
+/* hero - section */
+
+.hero-container{
+    background-image: url(./Images/blog-image-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    color:white ;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.2em;
+}
+
+.hero-desc-container{
+    max-width: 700px;
+}
+
+.date{
+    font-weight: 200;
+}
+
+.hero-heading{
+    font-size: 2.5rem;
+    margin: .1em 0;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog-container{
+    max-width: 350px;
+    margin-bottom: 2.5em;
+}
+
+.blog-container img{
+    width: 100%;
+    margin-bottom: .3em;
+}
+
+.blog-header{
+    font-size: 1.5rem;
+    margin: .2em 0;
+}
+
+/* footer */
+
+footer{
+    height: 10vh;
+    padding: 1em;
+    color: #D7D7D7;
+    background: #202020;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-header, .footer-text{
+    font-size: 0.75rem;
+}
+
+@media (max-width: 415px){
+    .nav-bar a,.nav-bar h4 {
+        font-size: 1rem;
+    }
+    .nav-bar{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .hero-heading{
+        font-size: 2rem;
+    }
+}
